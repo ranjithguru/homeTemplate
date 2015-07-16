@@ -310,26 +310,33 @@ div.required .control-label:before {
 /* footer */
 footer {
 	margin-top: 30px;
-	padding-top: 30px;
-	background-color: #303030;
-	border-top: 1px solid #ddd;
-	color: #e2e2e2;
+	padding-top: 10px;
+	background: transparent;
+	background: url("../image/footer.png");
+    color: white;
+    position: relative;
 }
+    
 footer hr {
 	border-top: none;
-	border-bottom: 1px solid #666;
+	border-bottom: 5px solid #cde09e;
 }
 footer a {
-	color: #ccc;
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+    font-size: 15px;
 }
 footer a:hover {
-	color: #fff;
+	color: #FF8000;
+	font-size: 16px;
+	font-weight: bold;
 }
 footer h5 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 17px;
 	font-weight: bold;
-	color: #fff;
+	color: #FF8000;
 }
 /* alert */
 .alert {

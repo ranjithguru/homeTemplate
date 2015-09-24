@@ -33,7 +33,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #23a1d1;
+	color: #FBB917;
 }
 a:hover {
 	text-decoration: none;
@@ -86,7 +86,7 @@ div.required .control-label:before {
 	min-height: 40px;
 }
 #top .container {
-	padding: 0 0;
+	padding: 0 20px;
 }
 #top #currency .currency-select {
 	text-align: left;
@@ -102,6 +102,7 @@ div.required .control-label:before {
 	color: #808aa1;
 	text-decoration: none;
 }
+
 #top .btn-link:hover, #top-links a:hover {
 	color: white;
 }
@@ -113,7 +114,7 @@ div.required .control-label:before {
 }
 #top .btn-link strong {
 	font-size: 14px;
-        line-height: 14px;
+    line-height: 14px;
 }
 #top-links {
 	padding-top: 6px;
@@ -304,11 +305,11 @@ div.required .control-label:before {
 }
 /* content */
 #content {
-	min-height: 600px;
+	min-height: 700px;
 }
 /* footer */
 footer {
-	margin-top: 30px;
+	margin-top: 100px;
 	padding-top: 10px;
 	background: transparent;
 	background: url("../image/footer.png");
@@ -345,7 +346,8 @@ footer h5 {
 .breadcrumb {
 	margin: 0 0 20px 0;
 	padding: 8px 0;
-	border: 1px solid #ddd;
+	border: 1px solid #FBB917;
+	background-color: white;
 }
 .breadcrumb i {
 	font-size: 15px;
@@ -368,8 +370,8 @@ footer h5 {
 	right: -5px;
 	width: 26px;
 	height: 26px;
-	border-right: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
+	border-right: 1px solid #FBB917;
+	border-bottom: 1px solid #FBB917;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
@@ -420,15 +422,15 @@ footer h5 {
 	border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
 }
 .btn-primary {
-	color: #ffffff;
+	color: ;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+	background-color: #FBB917;
+	background-image: linear-gradient(to bottom, #FBB917, #FBB917);
 	background-repeat: repeat-x;
-	border-color: #1f90bb #1f90bb #145e7a;
+	border-color: #FBB917 #FBB917 #FBB917;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-	background-color: #1f90bb;
+	background-color: #FBB917;
 	background-position: 0 -15px;
 }
 .btn-warning {
@@ -526,22 +528,25 @@ footer h5 {
 }
 /* product list */
 .product-thumb {
-	border: 1px solid #ddd;
+	border: 1px solid #FF9900;
 	margin-bottom: 20px;
 	overflow: auto;
 }
 .product-thumb .image {
 	text-align: center;
+	background: snow;
 }
 .product-thumb .image a {
 	display: block;
 }
 .product-thumb .image a:hover {
 	opacity: 0.8;
+	
 }
 .product-thumb .image img {
 	margin-left: auto;
 	margin-right: auto;
+    background-size: cover;
 }
 .product-grid .product-thumb .image {
 	float: none;
@@ -555,9 +560,16 @@ footer h5 {
 .product-thumb h4 {
 	font-weight: bold;
 }
+.product-thumb h4 a {
+	color: #FF9900;
+}
+.product-thumb h4 a:hover {
+	color: DarkGreen;
+}
 .product-thumb .caption {
-	padding: 0 20px;
+	padding: 10px 20px;
 	min-height: 180px;
+	background: white;
 }
 .product-list .product-thumb .caption {
 	margin-left: 230px;
@@ -616,7 +628,7 @@ h2.price {
 }
 .product-thumb .button-group {
 	border-top: 1px solid #ddd;
-	background-color: #eee;
+	background-color:#FBB917;
 	overflow: auto;
 }
 .product-list .product-thumb .button-group {
@@ -632,8 +644,8 @@ h2.price {
 	border: none;
 	display: inline-block;
 	float: left;
-	background-color: #eee;
-	color: #888;
+	background-color: #FBB917;
+	color: white;
 	line-height: 38px;
 	font-weight: bold;
 	text-align: center;
@@ -644,8 +656,8 @@ h2.price {
 	border-left: 1px solid #ddd;
 }
 .product-thumb .button-group button:hover {
-	color: #444;
-	background-color: #ddd;
+	color:  white;
+	background-color: #FF9900;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -714,4 +726,27 @@ h2.price {
 /* fixed mobile cart quantity input */
 .input-group .form-control[name^=quantity] {
 	min-width: 50px;
+}
+/*panel deafult */
+.panel-default {
+    border-color: white;
+    
+}
+
+.panel-default .panel-heading {
+	background-color: #FBB917;/*#424955*/
+	color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.panel-group .panel+.panel {
+    margin-top: 10px;
+}
+.well {
+    background-color: #424955;
+    color: white;
+    border-radius: 25px;
+}
+.well h2 {
+	color: white;
 }
